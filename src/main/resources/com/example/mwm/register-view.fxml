@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="com.example.mwm.view.RegisterController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button onAction="#login" layoutX="310.0" layoutY="254.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="159.0" text="Войти" />
+      <Button onAction="#register" layoutX="122.0" layoutY="254.0" mnemonicParsing="false" text="Зарегистрироваться" />
+      <TextField fx:id="textFieldUsername" layoutX="269.0" layoutY="117.0" />
+      <TextField fx:id="textFieldPassword" layoutX="269.0" layoutY="169.0" />
+      <Text layoutX="126.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя пользователя" />
+      <Text layoutX="201.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+   </children>
+</Pane>

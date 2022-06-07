@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root prefHeight="54.0" prefWidth="200.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="image" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="7.0" top="7.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="119.0" prefWidth="115.0">
+         <children>
+            <Label fx:id="name" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Text fx:id="lastMessage" fill="#818080" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</fx:root>

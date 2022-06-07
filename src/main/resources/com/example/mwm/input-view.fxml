@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mwm.view.InputController">
+   <children>
+      <Button layoutX="337.0" layoutY="254.0" mnemonicParsing="false" onAction="#input" prefHeight="31.0" prefWidth="132.0" text="Ввести" />
+      <Button layoutX="151.0" layoutY="254.0" mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="132.0" text="Отмена" />
+      <TextField fx:id="textFieldPassword" layoutX="269.0" layoutY="169.0" />
+      <Text layoutX="121.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Чат является приватным. Пожалуйста, введите пароль." />
+      <Text layoutX="201.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mwm.view.MainController">
+   <left>
+      <BorderPane prefHeight="700.0" prefWidth="262.0" BorderPane.alignment="CENTER">
+         <top>
+            <Button fx:id="buttonNewChat" mnemonicParsing="false" onAction="#selectNewChat" prefHeight="31.0" prefWidth="266.0" text="Новый чат" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <ScrollPane fx:id="chatScrollPane" hbarPolicy="NEVER" prefHeight="669.0" prefWidth="256.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <HBox prefHeight="32.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="textFieldMessage" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#sendMessage" prefHeight="31.0" prefWidth="124.0" text="Отправить" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+         </center>
+         <center>
+            <ScrollPane fx:id="messageScrollPane" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="736.0" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mwm.view.CreateController">
+   <children>
+      <Button layoutX="310.0" layoutY="254.0" mnemonicParsing="false" onAction="#createChat" prefHeight="31.0" prefWidth="159.0" text="Создать" />
+      <Button layoutX="122.0" layoutY="254.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="159.0" text="Отмена" />
+      <TextField fx:id="textFieldName" layoutX="217.0" layoutY="91.0" />
+      <TextField fx:id="textFieldPassword" layoutX="217.0" layoutY="154.0" />
+      <Text layoutX="83.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название чата" textAlignment="RIGHT" wrappingWidth="117.76318359375" />
+      <Text fx:id="textPassword" layoutX="149.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+      <CheckBox fx:id="checkBoxIsPrivate" layoutX="390.0" layoutY="95.0" mnemonicParsing="false" text="Приватный" />
+   </children>
+</Pane>
