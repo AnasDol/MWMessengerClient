@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.paint.*?>
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<fx:root prefHeight="80.0" prefWidth="730.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root fx:id="pane" prefHeight="80.0" prefWidth="798.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 
    <children>
-      <Text fx:id="textMessage" layoutX="21.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="404.6708984375">
+      <Text fx:id="textMessage" layoutX="21.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="494.6708984375">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <VBox layoutX="598.0" layoutY="13.0" prefHeight="55.0" prefWidth="124.0">
+      <VBox layoutX="594.0" layoutY="13.0" prefHeight="55.0" prefWidth="187.0">
          <children>
-            <Text fx:id="textSenderName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="123.6708984375">
+            <Text fx:id="textSenderName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="189.6708984375">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text fx:id="textDatetime" fill="#838383" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="123.6708984375" />
+            <Text fx:id="textDatetime" fill="#d0d0d0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="187.6708984375" />
          </children>
       </VBox>
    </children>

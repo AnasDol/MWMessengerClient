@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane fx:controller="com.example.mwm.view.SelectController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mwm.view.SelectController">
    <center>
-      <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="337.0" prefWidth="470.0" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <HBox prefHeight="32.0" prefWidth="280.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField prefHeight="31.0" prefWidth="217.0" />
-            <Button contentDisplay="CENTER" mnemonicParsing="false" text="Поиск" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск:">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="searchTextField" prefHeight="31.0" prefWidth="438.0" />
          </children>
       </HBox>
    </top>
    <bottom>
       <HBox prefHeight="27.0" prefWidth="280.0" BorderPane.alignment="CENTER">
          <children>
-            <Button onAction="#joinChat" mnemonicParsing="false" prefHeight="31.0" prefWidth="206.0" text="Присоединиться к чату" />
-            <Button onAction="#createChat" mnemonicParsing="false" text="Создать" />
+            <Button mnemonicParsing="false" onAction="#joinChat" prefHeight="31.0" prefWidth="347.0" text="Присоединиться к чату" />
+            <Button mnemonicParsing="false" onAction="#createChat" prefHeight="31.0" prefWidth="125.0" text="Создать" />
          </children>
       </HBox>
    </bottom>

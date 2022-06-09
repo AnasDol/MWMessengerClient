@@ -2,12 +2,14 @@ package com.example.mwm.view;
 
 import com.example.mwm.MessengerApplication;
 import com.example.mwm.model.Chat;
+import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 
 import java.io.FileInputStream;
@@ -25,6 +27,8 @@ public class MessageBox extends HBox {
     private Text textDatetime;
     @FXML
     private Text textMessage;
+    @FXML
+    private Pane pane;
 
     private Chat.Message message;
 
@@ -46,6 +50,9 @@ public class MessageBox extends HBox {
         textDatetime.setText(message.dateTime.toString());
 
         textMessage.setText(message.text);
+
+        pane.setBackground(new Background((new BackgroundFill(message.color, CornerRadii.EMPTY, Insets.EMPTY))));
+        //pane.scaleYProperty().bindBidirectional(textMessage.scaleYProperty());
 
     }
 }

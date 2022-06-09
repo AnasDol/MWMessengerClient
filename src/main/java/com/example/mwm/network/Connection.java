@@ -20,6 +20,8 @@ public class Connection {
     private static Scanner inMessage;
     private static PrintWriter outMessage;
 
+    public static String username;
+
     private static Thread thread;
 
     public Connection() {
@@ -188,6 +190,7 @@ public class Connection {
         sendMessage("#login");
         sendMessage(username);
         sendMessage(password);
+        Connection.username = username;
 
     }
 
@@ -196,6 +199,7 @@ public class Connection {
         sendMessage("#register");
         sendMessage(username);
         sendMessage(password);
+        Connection.username = username;
 
     }
 
@@ -233,4 +237,5 @@ public class Connection {
         sendMessage(name);
         sendMessage(password);
     }
+
 }

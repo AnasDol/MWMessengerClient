@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -16,7 +17,7 @@
       </BorderPane>
    </left>
    <center>
-      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <BorderPane fx:id="borderPane" prefHeight="689.0" prefWidth="738.0" BorderPane.alignment="CENTER">
          <bottom>
             <HBox prefHeight="32.0" prefWidth="800.0" BorderPane.alignment="CENTER">
                <children>
@@ -28,12 +29,15 @@
          <center>
          </center>
          <center>
-            <ScrollPane fx:id="messageScrollPane" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="736.0" BorderPane.alignment="CENTER">
+            <ScrollPane fx:id="messageScrollPane" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="738.0" BorderPane.alignment="CENTER">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
               </content>
             </ScrollPane>
          </center>
+         <top>
+            <Text fx:id="usernameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="735.6708984375" BorderPane.alignment="CENTER" />
+         </top>
       </BorderPane>
    </center>
 </BorderPane>

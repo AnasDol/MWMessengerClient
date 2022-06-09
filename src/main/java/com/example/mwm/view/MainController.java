@@ -13,6 +13,7 @@ import javafx.scene.control.MultipleSelectionModel;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 
@@ -26,6 +27,8 @@ public class MainController {
     private TextField textFieldMessage;
     @FXML
     private ScrollPane messageScrollPane;
+    @FXML
+    private Text usernameText;
 
 
     private static ListView<ChatBox> chatBoxListView = new ListView<>();
@@ -68,11 +71,12 @@ public class MainController {
         chatScrollPane.setContent(chatBoxListView);
         Connection.requestUserChats();
 
-        messageScrollPane.vvalueProperty().bind(messageBoxListView.heightProperty());
+        //messageScrollPane.vvalueProperty().bind(messageBoxListView.heightProperty());
         messageScrollPane.setContent(messageBoxListView);
         messageBoxListView.setPrefHeight(668);
         messageBoxListView.setPrefWidth(736);
 
+        usernameText.setText("Имя пользователя: "+Connection.username);
 
 
         // устанавливаем слушатель для отслеживания выбора

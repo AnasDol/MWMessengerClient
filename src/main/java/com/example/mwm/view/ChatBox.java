@@ -18,7 +18,7 @@ import java.util.Objects;
 public class ChatBox extends HBox {
 
     @FXML
-    private Label name;
+    private Text name;
     @FXML
     private Text lastMessage;
     @FXML

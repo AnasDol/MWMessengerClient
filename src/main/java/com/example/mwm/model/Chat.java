@@ -2,26 +2,20 @@ package com.example.mwm.model;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
 
-public class Chat implements Serializable {
+public class Chat {
 
     public String name;
 
     public String type;
 
-    public String history;
-
     public String lastMessage;
 
     public ImageView image;
-
-    public ArrayList<Message> messages;
 
 
     public Chat(String info) { // example: "#name#public#lastMessage"
@@ -48,6 +42,8 @@ public class Chat implements Serializable {
 
         public String dateTime;
 
+        public Color color;
+
         public String text;
 
         public Message(String message_info) {
@@ -55,8 +51,11 @@ public class Chat implements Serializable {
             String[] arr = message_info.split("#");
 
             this.senderName = arr[1];
-            this.dateTime = arr[2];
-            this.text = arr[3];
+
+            String[] rgb = arr[2].split("/");
+            color = new Color(Double.parseDouble(rgb[0])/1000, Double.parseDouble(rgb[1])/1000, Double.parseDouble(rgb[2])/1000, 0.6).brighter().brighter().brighter();
+            this.dateTime = arr[3];
+            this.text = arr[4];
 
         }
 
